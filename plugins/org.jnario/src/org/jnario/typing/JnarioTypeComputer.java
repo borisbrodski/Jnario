@@ -3,12 +3,14 @@ package org.jnario.typing;
 
 import static org.jnario.jvmmodel.DoubleArrowSupport.isDoubleArrow;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.common.types.JvmFormalParameter;
 import org.eclipse.xtext.common.types.JvmGenericType;
+import org.eclipse.xtext.common.types.JvmIdentifiableElement;
 import org.eclipse.xtext.common.types.JvmOperation;
 import org.eclipse.xtext.common.types.JvmPrimitiveType;
 import org.eclipse.xtext.common.types.JvmTypeReference;
@@ -110,6 +112,27 @@ public class JnarioTypeComputer extends XbaseWithRichstringTypeComputer {
 	 */
 	@Override
 	protected ILinkingCandidate getBestCandidate(List<? extends ILinkingCandidate> candidates) {
+		if (candidates.size() == 2) {
+			ILinkingCandidate candidateObjectExtensions = null;
+			ILinkingCandidate candidateShould = null;
+			for (ILinkingCandidate candidate : candidates) {
+				if (candidate.getFeature() != null) {
+					String name = candidate.getFeature().getQualifiedName();
+					if (name.equals("org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow")) {
+						candidateObjectExtensions = candidate;
+					} else if (name.equals("org.jnario.lib.Should.operator_doubleArrow")) {
+						candidateShould = candidate;
+					}
+				}
+			}
+			if (candidateObjectExtensions != null && candidateShould != null) {
+                XExpression expression = candidates.get(0).getExpression();
+                if (expression instanceof XBinaryOperation && ((XBinaryOperation) expression).getRightOperand() instanceof XClosure) {
+                	return candidateObjectExtensions;
+                }
+                return candidateShould;
+			}
+		}
 		for (ILinkingCandidate candidate : candidates) {
 			if (candidate.getFeature() instanceof JvmOperation && candidate.getFeature().eContainer() instanceof JvmGenericType) {
                 JvmOperation feature = (JvmOperation) candidate.getFeature();
