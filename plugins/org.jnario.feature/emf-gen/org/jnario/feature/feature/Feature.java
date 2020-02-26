@@ -34,10 +34,6 @@ public interface Feature extends Specification
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
@@ -61,10 +57,6 @@ public interface Feature extends Specification
 	 * Returns the value of the '<em><b>Scenarios</b></em>' reference list.
 	 * The list contents are of type {@link org.jnario.feature.feature.Scenario}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Scenarios</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scenarios</em>' reference list.
 	 * @see org.jnario.feature.feature.FeaturePackage#getFeature_Scenarios()
@@ -76,10 +68,6 @@ public interface Feature extends Specification
 	/**
 	 * Returns the value of the '<em><b>Background</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Background</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Background</em>' reference.
 	 * @see #setBackground(Background)

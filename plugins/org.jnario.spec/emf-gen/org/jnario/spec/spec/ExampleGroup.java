@@ -37,10 +37,6 @@ public interface ExampleGroup extends Specification, JnarioMember
 	/**
 	 * Returns the value of the '<em><b>Preamble</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Preamble</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Preamble</em>' attribute.
 	 * @see #setPreamble(String)
@@ -63,10 +59,6 @@ public interface ExampleGroup extends Specification, JnarioMember
 	/**
 	 * Returns the value of the '<em><b>Target Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Type</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Type</em>' containment reference.
 	 * @see #setTargetType(JvmTypeReference)
@@ -89,10 +81,6 @@ public interface ExampleGroup extends Specification, JnarioMember
 	/**
 	 * Returns the value of the '<em><b>Target Operation</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Operation</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Operation</em>' reference.
 	 * @see #setTargetOperation(JvmOperation)
@@ -115,10 +103,6 @@ public interface ExampleGroup extends Specification, JnarioMember
 	/**
 	 * Returns the value of the '<em><b>Contract</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contract</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contract</em>' reference.
 	 * @see #setContract(ExampleGroup)

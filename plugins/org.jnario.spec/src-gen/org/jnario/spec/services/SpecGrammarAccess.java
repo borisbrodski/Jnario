@@ -65,7 +65,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//xtendTypes+=Type*
 		public Assignment getXtendTypesAssignment_3() { return cXtendTypesAssignment_3; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#XtextFragmentProvider_org.jnario.spec.Spec/Type'
+		//Type
 		public RuleCall getXtendTypesTypeParserRuleCall_3_0() { return cXtendTypesTypeParserRuleCall_3_0; }
 	}
 
@@ -93,52 +93,54 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//	targetType=JvmTypeReference? name=STRING? '{' members+=Member* '}');
 		@Override public ParserRule getRule() { return rule; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#XtextFragmentProvider_org.jnario.spec.Spec/Member'
+		//{JnarioTypeDeclaration} annotations+=XAnnotation* ({ExampleGroup.annotationInfo=current} preamble='describe'
+		//targetType=JvmTypeReference? name=STRING? '{' members+=Member* '}')
 		public Group getGroup() { return cGroup; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.0'
+		//{JnarioTypeDeclaration}
 		public Action getJnarioTypeDeclarationAction_0() { return cJnarioTypeDeclarationAction_0; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.1'
+		//annotations+=XAnnotation*
 		public Assignment getAnnotationsAssignment_1() { return cAnnotationsAssignment_1; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.1/@terminal'
+		//XAnnotation
 		public RuleCall getAnnotationsXAnnotationParserRuleCall_1_0() { return cAnnotationsXAnnotationParserRuleCall_1_0; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2'
+		//({ExampleGroup.annotationInfo=current} preamble='describe' targetType=JvmTypeReference? name=STRING? '{'
+		//members+=Member* '}')
 		public Group getGroup_2() { return cGroup_2; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.0'
+		//{ExampleGroup.annotationInfo=current}
 		public Action getExampleGroupAnnotationInfoAction_2_0() { return cExampleGroupAnnotationInfoAction_2_0; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.1'
+		//preamble='describe'
 		public Assignment getPreambleAssignment_2_1() { return cPreambleAssignment_2_1; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.1/@terminal'
+		//'describe'
 		public Keyword getPreambleDescribeKeyword_2_1_0() { return cPreambleDescribeKeyword_2_1_0; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.2'
+		//targetType=JvmTypeReference?
 		public Assignment getTargetTypeAssignment_2_2() { return cTargetTypeAssignment_2_2; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.2/@terminal'
+		//JvmTypeReference
 		public RuleCall getTargetTypeJvmTypeReferenceParserRuleCall_2_2_0() { return cTargetTypeJvmTypeReferenceParserRuleCall_2_2_0; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.3'
+		//name=STRING?
 		public Assignment getNameAssignment_2_3() { return cNameAssignment_2_3; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.3/@terminal'
+		//STRING
 		public RuleCall getNameSTRINGTerminalRuleCall_2_3_0() { return cNameSTRINGTerminalRuleCall_2_3_0; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.4'
+		//'{'
 		public Keyword getLeftCurlyBracketKeyword_2_4() { return cLeftCurlyBracketKeyword_2_4; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.5'
+		//members+=Member*
 		public Assignment getMembersAssignment_2_5() { return cMembersAssignment_2_5; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.5/@terminal'
+		//Member
 		public RuleCall getMembersMemberParserRuleCall_2_5_0() { return cMembersMemberParserRuleCall_2_5_0; }
 
-		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/jnario/spec/Spec.xtext#/0/@rules.1/@alternatives/@elements.2/@elements.6'
+		//'}'
 		public Keyword getRightCurlyBracketKeyword_2_6() { return cRightCurlyBracketKeyword_2_6; }
 	}
 
@@ -514,7 +516,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//XAnnotation
 		public RuleCall getAnnotationsXAnnotationParserRuleCall_1_0() { return cAnnotationsXAnnotationParserRuleCall_1_0; }
 
-		//{Example.annotationInfo=current} (pending?='pending'? ('fact' | 'facts') expr=XExpression expression=XBlockExpression?)
+		//({Example.annotationInfo=current} (pending?='pending'? ('fact' | 'facts') expr=XExpression expression=XBlockExpression?)
 		//| {ExampleGroup.annotationInfo=current} (preamble='describe' targetType=JvmTypeReference? name=STRING? '{'
 		//members+=Member* '}') | {Before.annotationInfo=current} ('before' (modifiers+='all' | 'each')? => name=STRING?
 		//expression=XExpression) | {After.annotationInfo=current} ('after' (modifiers+='all' | 'each')? => name=STRING?
@@ -530,7 +532,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//typeParameters+=JvmTypeParameter (',' typeParameters+=JvmTypeParameter)* '>')? (=> (returnType=JvmTypeReference
 		//name=ValidID '(') | name=ValidID '(') (parameters+=Parameter (',' parameters+=Parameter)*)? ')' ('throws'
 		//exceptions+=JvmTypeReference (',' exceptions+=JvmTypeReference)*)? (expression=XBlockExpression |
-		//expression=RichString | ';')?
+		//expression=RichString | ';')?)
 		public Alternatives getAlternatives_2() { return cAlternatives_2; }
 
 		//{Example.annotationInfo=current} (pending?='pending'? ('fact' | 'facts') expr=XExpression expression=XBlockExpression?)
@@ -539,7 +541,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//{Example.annotationInfo=current}
 		public Action getExampleAnnotationInfoAction_2_0_0() { return cExampleAnnotationInfoAction_2_0_0; }
 
-		//pending?='pending'? ('fact' | 'facts') expr=XExpression expression=XBlockExpression?
+		//(pending?='pending'? ('fact' | 'facts') expr=XExpression expression=XBlockExpression?)
 		public Group getGroup_2_0_1() { return cGroup_2_0_1; }
 
 		//pending?='pending'?
@@ -548,7 +550,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//'pending'
 		public Keyword getPendingPendingKeyword_2_0_1_0_0() { return cPendingPendingKeyword_2_0_1_0_0; }
 
-		//'fact' | 'facts'
+		//('fact' | 'facts')
 		public Alternatives getAlternatives_2_0_1_1() { return cAlternatives_2_0_1_1; }
 
 		//'fact'
@@ -576,7 +578,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//{ExampleGroup.annotationInfo=current}
 		public Action getExampleGroupAnnotationInfoAction_2_1_0() { return cExampleGroupAnnotationInfoAction_2_1_0; }
 
-		//preamble='describe' targetType=JvmTypeReference? name=STRING? '{' members+=Member* '}'
+		//(preamble='describe' targetType=JvmTypeReference? name=STRING? '{' members+=Member* '}')
 		public Group getGroup_2_1_1() { return cGroup_2_1_1; }
 
 		//preamble='describe'
@@ -615,7 +617,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//{Before.annotationInfo=current}
 		public Action getBeforeAnnotationInfoAction_2_2_0() { return cBeforeAnnotationInfoAction_2_2_0; }
 
-		//'before' (modifiers+='all' | 'each')? => name=STRING? expression=XExpression
+		//('before' (modifiers+='all' | 'each')? => name=STRING? expression=XExpression)
 		public Group getGroup_2_2_1() { return cGroup_2_2_1; }
 
 		//'before'
@@ -651,7 +653,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//{After.annotationInfo=current}
 		public Action getAfterAnnotationInfoAction_2_3_0() { return cAfterAnnotationInfoAction_2_3_0; }
 
-		//'after' (modifiers+='all' | 'each')? => name=STRING? expression=XExpression
+		//('after' (modifiers+='all' | 'each')? => name=STRING? expression=XExpression)
 		public Group getGroup_2_3_1() { return cGroup_2_3_1; }
 
 		//'after'
@@ -688,7 +690,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//{ExampleGroup.annotationInfo=current}
 		public Action getExampleGroupAnnotationInfoAction_2_4_0() { return cExampleGroupAnnotationInfoAction_2_4_0; }
 
-		//preamble='context' targetOperation=[types::JvmOperation|Method]? name=STRING? '{' members+=Member* '}'
+		//(preamble='context' targetOperation=[types::JvmOperation|Method]? name=STRING? '{' members+=Member* '}')
 		public Group getGroup_2_4_1() { return cGroup_2_4_1; }
 
 		//preamble='context'
@@ -730,7 +732,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//{ExampleTable.annotationInfo=current}
 		public Action getExampleTableAnnotationInfoAction_2_5_0() { return cExampleTableAnnotationInfoAction_2_5_0; }
 
-		//'def' name=ID? '{' ('|' columns+=ExampleColumn* rows+=ExampleRow*)? '}'
+		//('def' name=ID? '{' ('|' columns+=ExampleColumn* rows+=ExampleRow*)? '}')
 		public Group getGroup_2_5_1() { return cGroup_2_5_1; }
 
 		//'def'
@@ -782,10 +784,10 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//CommonModifier
 		public RuleCall getModifiersCommonModifierParserRuleCall_2_6_1_0() { return cModifiersCommonModifierParserRuleCall_2_6_1_0; }
 
-		//modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID | modifiers+='extension'
+		//(modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID | modifiers+='extension'
 		//(modifiers+=FieldModifier | modifiers+=CommonModifier)* type=JvmTypeReference name=ValidID? | modifiers+=FieldModifier
 		//modifiers+=CommonModifier* modifiers+='extension' modifiers+=CommonModifier* type=JvmTypeReference name=ValidID? |
-		//type=JvmTypeReference name=ValidID
+		//type=JvmTypeReference name=ValidID)
 		public Alternatives getAlternatives_2_6_2() { return cAlternatives_2_6_2; }
 
 		//modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID
@@ -985,13 +987,13 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//'>'
 		public Keyword getGreaterThanSignKeyword_2_7_4_3() { return cGreaterThanSignKeyword_2_7_4_3; }
 
-		//=> (returnType=JvmTypeReference name=ValidID '(') | name=ValidID '('
+		//(=> (returnType=JvmTypeReference name=ValidID '(') | name=ValidID '(')
 		public Alternatives getAlternatives_2_7_5() { return cAlternatives_2_7_5; }
 
 		//=> (returnType=JvmTypeReference name=ValidID '(')
 		public Group getGroup_2_7_5_0() { return cGroup_2_7_5_0; }
 
-		//returnType=JvmTypeReference name=ValidID '('
+		//(returnType=JvmTypeReference name=ValidID '(')
 		public Group getGroup_2_7_5_0_0() { return cGroup_2_7_5_0_0; }
 
 		//returnType=JvmTypeReference
@@ -1242,7 +1244,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//=> ({Should.leftOperand=current} feature=[types::JvmIdentifiableElement|Should])
 		public Group getGroup_1_0_0() { return cGroup_1_0_0; }
 
-		//{Should.leftOperand=current} feature=[types::JvmIdentifiableElement|Should]
+		//({Should.leftOperand=current} feature=[types::JvmIdentifiableElement|Should])
 		public Group getGroup_1_0_0_0() { return cGroup_1_0_0_0; }
 
 		//{Should.leftOperand=current}
@@ -1269,13 +1271,13 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//=> ({ShouldThrow.expression=current} ('should' 'throw' | 'throws'))
 		public Group getGroup_1_1_0() { return cGroup_1_1_0; }
 
-		//{ShouldThrow.expression=current} ('should' 'throw' | 'throws')
+		//({ShouldThrow.expression=current} ('should' 'throw' | 'throws'))
 		public Group getGroup_1_1_0_0() { return cGroup_1_1_0_0; }
 
 		//{ShouldThrow.expression=current}
 		public Action getShouldThrowExpressionAction_1_1_0_0_0() { return cShouldThrowExpressionAction_1_1_0_0_0; }
 
-		//'should' 'throw' | 'throws'
+		//('should' 'throw' | 'throws')
 		public Alternatives getAlternatives_1_1_0_0_1() { return cAlternatives_1_1_0_0_1; }
 
 		//'should' 'throw'
@@ -1302,7 +1304,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//=> ({xbase::XInstanceOfExpression.expression=current} 'instanceof')
 		public Group getGroup_1_2_0() { return cGroup_1_2_0; }
 
-		//{xbase::XInstanceOfExpression.expression=current} 'instanceof'
+		//({xbase::XInstanceOfExpression.expression=current} 'instanceof')
 		public Group getGroup_1_2_0_0() { return cGroup_1_2_0_0; }
 
 		//{xbase::XInstanceOfExpression.expression=current}
@@ -1324,7 +1326,7 @@ public class SpecGrammarAccess extends AbstractGrammarElementFinder {
 		//=> ({xbase::XBinaryOperation.leftOperand=current} feature=[types::JvmIdentifiableElement|OpCompare])
 		public Group getGroup_1_3_0() { return cGroup_1_3_0; }
 
-		//{xbase::XBinaryOperation.leftOperand=current} feature=[types::JvmIdentifiableElement|OpCompare]
+		//({xbase::XBinaryOperation.leftOperand=current} feature=[types::JvmIdentifiableElement|OpCompare])
 		public Group getGroup_1_3_0_0() { return cGroup_1_3_0_0; }
 
 		//{xbase::XBinaryOperation.leftOperand=current}

@@ -5360,30 +5360,33 @@ public class InternalFeatureLexer extends Lexer {
         "\3\uffff\1\1\17\uffff\1\2\1\uffff\1\2";
     static final String DFA1_specialS =
         "\1\17\1\2\1\14\1\uffff\1\3\1\15\1\4\1\16\1\5\1\20\1\6\1\21\1\7\1\22\1\10\1\0\1\11\1\1\1\12\1\uffff\1\13\1\uffff}>";
-    static final String[] DFA1_transitionS = {
-            "\102\3\1\1\20\3\1\2\uffac\3",
-            "\141\3\1\4\uff9e\3",
-            "\143\3\1\5\uff9c\3",
-            "",
-            "\143\3\1\6\uff9c\3",
-            "\145\3\1\7\uff9a\3",
-            "\153\3\1\10\uff94\3",
-            "\156\3\1\11\uff91\3",
-            "\147\3\1\12\uff98\3",
-            "\141\3\1\13\uff9e\3",
-            "\162\3\1\14\uff8d\3",
-            "\162\3\1\15\uff8d\3",
-            "\157\3\1\16\uff90\3",
-            "\151\3\1\17\uff96\3",
-            "\165\3\1\20\uff8a\3",
-            "\157\3\1\21\uff90\3",
-            "\156\3\1\22\uff91\3",
-            "\72\3\1\23\uffc5\3",
-            "\144\3\1\24\uff9b\3",
-            "",
-            "\72\3\1\25\uffc5\3",
-            ""
-    };
+    static final String[] DFA1_transitionS = DFA1_transitionS_.DFA1_transitionS;
+    private static final class DFA1_transitionS_ {
+        static final String[] DFA1_transitionS = {
+                "\102\3\1\1\20\3\1\2\uffac\3",
+                "\141\3\1\4\uff9e\3",
+                "\143\3\1\5\uff9c\3",
+                "",
+                "\143\3\1\6\uff9c\3",
+                "\145\3\1\7\uff9a\3",
+                "\153\3\1\10\uff94\3",
+                "\156\3\1\11\uff91\3",
+                "\147\3\1\12\uff98\3",
+                "\141\3\1\13\uff9e\3",
+                "\162\3\1\14\uff8d\3",
+                "\162\3\1\15\uff8d\3",
+                "\157\3\1\16\uff90\3",
+                "\151\3\1\17\uff96\3",
+                "\165\3\1\20\uff8a\3",
+                "\157\3\1\21\uff90\3",
+                "\156\3\1\22\uff91\3",
+                "\72\3\1\23\uffc5\3",
+                "\144\3\1\24\uff9b\3",
+                "",
+                "\72\3\1\25\uffc5\3",
+                ""
+        };
+    }
 
     static final short[] DFA1_eot = DFA.unpackEncodedString(DFA1_eotS);
     static final short[] DFA1_eof = DFA.unpackEncodedString(DFA1_eofS);

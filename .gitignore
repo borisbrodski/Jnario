@@ -17,3 +17,5 @@ plugins/org.jnario.feature/.antlr-generator-3.2.0-patch.jar
 plugins/org.jnario.spec/.antlr-generator-3.2.0-patch.jar
 plugins/org.jnario.suite/.antlr-generator-3.2.0-patch.jar
 examples/selenium-example/src/test/ /
+
+.antlr-generator-3.2.0-patch.jar

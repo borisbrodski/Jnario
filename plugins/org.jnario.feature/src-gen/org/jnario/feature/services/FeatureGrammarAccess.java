@@ -451,11 +451,11 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//XAnnotation
 		public RuleCall getAnnotationsXAnnotationParserRuleCall_1_0() { return cAnnotationsXAnnotationParserRuleCall_1_0; }
 
-		//{JnarioField.annotationInfo=current} modifiers+=CommonModifier* (modifiers+=FieldModifier modifiers+=CommonModifier*
+		//({JnarioField.annotationInfo=current} modifiers+=CommonModifier* (modifiers+=FieldModifier modifiers+=CommonModifier*
 		//type=JvmTypeReference? name=ValidID | modifiers+='extension' (modifiers+=FieldModifier | modifiers+=CommonModifier)*
 		//type=JvmTypeReference name=ValidID? | modifiers+=FieldModifier modifiers+=CommonModifier* modifiers+='extension'
 		//modifiers+=CommonModifier* type=JvmTypeReference name=ValidID? | type=JvmTypeReference name=ValidID) ('='
-		//initialValue=XExpression)? ';'?
+		//initialValue=XExpression)? ';'?)
 		public Group getGroup_2() { return cGroup_2; }
 
 		//{JnarioField.annotationInfo=current}
@@ -467,10 +467,10 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//CommonModifier
 		public RuleCall getModifiersCommonModifierParserRuleCall_2_1_0() { return cModifiersCommonModifierParserRuleCall_2_1_0; }
 
-		//modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID | modifiers+='extension'
+		//(modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID | modifiers+='extension'
 		//(modifiers+=FieldModifier | modifiers+=CommonModifier)* type=JvmTypeReference name=ValidID? | modifiers+=FieldModifier
 		//modifiers+=CommonModifier* modifiers+='extension' modifiers+=CommonModifier* type=JvmTypeReference name=ValidID? |
-		//type=JvmTypeReference name=ValidID
+		//type=JvmTypeReference name=ValidID)
 		public Alternatives getAlternatives_2_2() { return cAlternatives_2_2; }
 
 		//modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID
@@ -1099,7 +1099,7 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//=> ({Should.leftOperand=current} feature=[types::JvmIdentifiableElement|Should])
 		public Group getGroup_1_0_0() { return cGroup_1_0_0; }
 
-		//{Should.leftOperand=current} feature=[types::JvmIdentifiableElement|Should]
+		//({Should.leftOperand=current} feature=[types::JvmIdentifiableElement|Should])
 		public Group getGroup_1_0_0_0() { return cGroup_1_0_0_0; }
 
 		//{Should.leftOperand=current}
@@ -1126,13 +1126,13 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//=> ({ShouldThrow.expression=current} ('should' 'throw' | 'throws'))
 		public Group getGroup_1_1_0() { return cGroup_1_1_0; }
 
-		//{ShouldThrow.expression=current} ('should' 'throw' | 'throws')
+		//({ShouldThrow.expression=current} ('should' 'throw' | 'throws'))
 		public Group getGroup_1_1_0_0() { return cGroup_1_1_0_0; }
 
 		//{ShouldThrow.expression=current}
 		public Action getShouldThrowExpressionAction_1_1_0_0_0() { return cShouldThrowExpressionAction_1_1_0_0_0; }
 
-		//'should' 'throw' | 'throws'
+		//('should' 'throw' | 'throws')
 		public Alternatives getAlternatives_1_1_0_0_1() { return cAlternatives_1_1_0_0_1; }
 
 		//'should' 'throw'
@@ -1159,7 +1159,7 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//=> ({xbase::XInstanceOfExpression.expression=current} 'instanceof')
 		public Group getGroup_1_2_0() { return cGroup_1_2_0; }
 
-		//{xbase::XInstanceOfExpression.expression=current} 'instanceof'
+		//({xbase::XInstanceOfExpression.expression=current} 'instanceof')
 		public Group getGroup_1_2_0_0() { return cGroup_1_2_0_0; }
 
 		//{xbase::XInstanceOfExpression.expression=current}
@@ -1181,7 +1181,7 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//=> ({xbase::XBinaryOperation.leftOperand=current} feature=[types::JvmIdentifiableElement|OpCompare])
 		public Group getGroup_1_3_0() { return cGroup_1_3_0; }
 
-		//{xbase::XBinaryOperation.leftOperand=current} feature=[types::JvmIdentifiableElement|OpCompare]
+		//({xbase::XBinaryOperation.leftOperand=current} feature=[types::JvmIdentifiableElement|OpCompare])
 		public Group getGroup_1_3_0_0() { return cGroup_1_3_0_0; }
 
 		//{xbase::XBinaryOperation.leftOperand=current}
@@ -1408,7 +1408,7 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//XAnnotation
 		public RuleCall getAnnotationsXAnnotationParserRuleCall_1_0() { return cAnnotationsXAnnotationParserRuleCall_1_0; }
 
-		//{JnarioField.annotationInfo=current} modifiers+=CommonModifier* (modifiers+=FieldModifier modifiers+=CommonModifier*
+		//({JnarioField.annotationInfo=current} modifiers+=CommonModifier* (modifiers+=FieldModifier modifiers+=CommonModifier*
 		//type=JvmTypeReference? name=ValidID | modifiers+='extension' (modifiers+=FieldModifier | modifiers+=CommonModifier)*
 		//type=JvmTypeReference name=ValidID? | modifiers+=FieldModifier modifiers+=CommonModifier* modifiers+='extension'
 		//modifiers+=CommonModifier* type=JvmTypeReference name=ValidID? | type=JvmTypeReference name=ValidID) ('='
@@ -1417,7 +1417,7 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//typeParameters+=JvmTypeParameter (',' typeParameters+=JvmTypeParameter)* '>')? (=> (returnType=JvmTypeReference
 		//name=FunctionID '(') | => (returnType=TypeReferenceNoTypeArgs name=FunctionID '(') | name=FunctionID '(')
 		//(parameters+=Parameter (',' parameters+=Parameter)*)? ')' ('throws' exceptions+=JvmTypeReference (','
-		//exceptions+=JvmTypeReference)*)? (expression=XBlockExpression | expression=RichString | ';')?
+		//exceptions+=JvmTypeReference)*)? (expression=XBlockExpression | expression=RichString | ';')?)
 		public Alternatives getAlternatives_2() { return cAlternatives_2; }
 
 		//{JnarioField.annotationInfo=current} modifiers+=CommonModifier* (modifiers+=FieldModifier modifiers+=CommonModifier*
@@ -1436,10 +1436,10 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//CommonModifier
 		public RuleCall getModifiersCommonModifierParserRuleCall_2_0_1_0() { return cModifiersCommonModifierParserRuleCall_2_0_1_0; }
 
-		//modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID | modifiers+='extension'
+		//(modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID | modifiers+='extension'
 		//(modifiers+=FieldModifier | modifiers+=CommonModifier)* type=JvmTypeReference name=ValidID? | modifiers+=FieldModifier
 		//modifiers+=CommonModifier* modifiers+='extension' modifiers+=CommonModifier* type=JvmTypeReference name=ValidID? |
-		//type=JvmTypeReference name=ValidID
+		//type=JvmTypeReference name=ValidID)
 		public Alternatives getAlternatives_2_0_2() { return cAlternatives_2_0_2; }
 
 		//modifiers+=FieldModifier modifiers+=CommonModifier* type=JvmTypeReference? name=ValidID
@@ -1639,14 +1639,14 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//'>'
 		public Keyword getGreaterThanSignKeyword_2_1_4_3() { return cGreaterThanSignKeyword_2_1_4_3; }
 
-		//=> (returnType=JvmTypeReference name=FunctionID '(') | => (returnType=TypeReferenceNoTypeArgs name=FunctionID '(') |
-		//name=FunctionID '('
+		//(=> (returnType=JvmTypeReference name=FunctionID '(') | => (returnType=TypeReferenceNoTypeArgs name=FunctionID '(') |
+		//name=FunctionID '(')
 		public Alternatives getAlternatives_2_1_5() { return cAlternatives_2_1_5; }
 
 		//=> (returnType=JvmTypeReference name=FunctionID '(')
 		public Group getGroup_2_1_5_0() { return cGroup_2_1_5_0; }
 
-		//returnType=JvmTypeReference name=FunctionID '('
+		//(returnType=JvmTypeReference name=FunctionID '(')
 		public Group getGroup_2_1_5_0_0() { return cGroup_2_1_5_0_0; }
 
 		//returnType=JvmTypeReference
@@ -1667,7 +1667,7 @@ public class FeatureGrammarAccess extends AbstractGrammarElementFinder {
 		//=> (returnType=TypeReferenceNoTypeArgs name=FunctionID '(')
 		public Group getGroup_2_1_5_1() { return cGroup_2_1_5_1; }
 
-		//returnType=TypeReferenceNoTypeArgs name=FunctionID '('
+		//(returnType=TypeReferenceNoTypeArgs name=FunctionID '(')
 		public Group getGroup_2_1_5_1_0() { return cGroup_2_1_5_1_0; }
 
 		//returnType=TypeReferenceNoTypeArgs

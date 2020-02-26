@@ -1,5 +1,5 @@
-Automatic-Module-Name: org.jnario.xbase.richstring
 Manifest-Version: 1.0
+Automatic-Module-Name: org.jnario.xbase.richstring
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-Vendor: %providerName
@@ -41,4 +41,5 @@ Export-Package: org.jnario.xbase.richstring,
  org.jnario.xbase.richstring.validation,
  org.jnario.xbase.richstring.xbasewithrichstring,
  org.jnario.xbase.richstring.xbasewithrichstring.impl,
- org.jnario.xbase.richstring.xbasewithrichstring.util
+ org.jnario.xbase.richstring.xbasewithrichstring.util,
+ org.jnario.xbase.richstring.jvmmodel

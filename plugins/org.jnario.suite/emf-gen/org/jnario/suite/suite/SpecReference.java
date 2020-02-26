@@ -31,10 +31,6 @@ public interface SpecReference extends Reference
 	/**
 	 * Returns the value of the '<em><b>Spec</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Spec</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Spec</em>' reference.
 	 * @see #setSpec(Specification)
@@ -57,10 +53,6 @@ public interface SpecReference extends Reference
 	/**
 	 * Returns the value of the '<em><b>Text</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Text</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Text</em>' attribute.
 	 * @see #setText(String)

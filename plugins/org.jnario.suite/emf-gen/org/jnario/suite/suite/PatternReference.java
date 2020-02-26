@@ -29,10 +29,6 @@ public interface PatternReference extends Reference
 	/**
 	 * Returns the value of the '<em><b>Pattern</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pattern</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pattern</em>' attribute.
 	 * @see #setPattern(String)

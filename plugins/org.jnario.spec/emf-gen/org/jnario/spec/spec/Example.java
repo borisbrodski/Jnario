@@ -33,10 +33,6 @@ public interface Example extends TestFunction, Executable
 	/**
 	 * Returns the value of the '<em><b>Expr</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Expr</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Expr</em>' containment reference.
 	 * @see #setExpr(XExpression)
@@ -59,10 +55,6 @@ public interface Example extends TestFunction, Executable
 	/**
 	 * Returns the value of the '<em><b>Pending</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pending</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pending</em>' attribute.
 	 * @see #setPending(boolean)

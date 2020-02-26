@@ -30,10 +30,6 @@ public interface StepReference extends Step
 	/**
 	 * Returns the value of the '<em><b>Reference</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reference</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference</em>' reference.
 	 * @see #setReference(StepImplementation)
@@ -56,10 +52,6 @@ public interface StepReference extends Step
 	/**
 	 * Returns the value of the '<em><b>Synthetic Step Reference</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Synthetic Step Reference</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Synthetic Step Reference</em>' reference.
 	 * @see #setSyntheticStepReference(Step)

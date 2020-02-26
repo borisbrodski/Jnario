@@ -94,7 +94,7 @@ public class SuiteGrammarAccess extends AbstractGrammarElementFinder {
 		//'import'
 		public Keyword getImportKeyword_0() { return cImportKeyword_0; }
 
-		//importedType=[types::JvmDeclaredType|QualifiedName] | importedNamespace=QualifiedNameWithWildcard
+		//(importedType=[types::JvmDeclaredType|QualifiedName] | importedNamespace=QualifiedNameWithWildcard)
 		public Alternatives getAlternatives_1() { return cAlternatives_1; }
 
 		//importedType=[types::JvmDeclaredType|QualifiedName]
