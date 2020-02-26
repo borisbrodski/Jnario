@@ -29,7 +29,7 @@ import org.jnario.suite.suite.SuiteFile;
 
 @SuppressWarnings("all")
 public class SuiteNodeBuilder {
-  private final static char PREFIX = "#".charAt(0);
+  private static final char PREFIX = "#".charAt(0);
   
   @Inject
   @Extension

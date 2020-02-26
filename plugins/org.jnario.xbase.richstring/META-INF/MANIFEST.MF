@@ -4,7 +4,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-Version: 1.1.1.qualifier
+Bundle-Version: 1.2.0.qualifier
 Bundle-ClassPath: .
 Bundle-SymbolicName: org.jnario.xbase.richstring;singleton:=true
 Bundle-ActivationPolicy: lazy
@@ -18,7 +18,7 @@ Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.generator;resolution:=optional,
  org.eclipse.emf.mwe.utils;resolution:=optional,
  org.apache.commons.lang,
- org.objectweb.asm;bundle-version="[5.0.1,7.0.0)";resolution:=optional,
+ org.objectweb.asm;bundle-version="[5.0.1,8.0.0)";resolution:=optional,
  org.eclipse.emf.mwe2.launch,
  org.eclipse.xtext.util,
  org.antlr.runtime,

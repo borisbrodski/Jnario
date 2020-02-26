@@ -17,7 +17,7 @@ import org.jnario.spec.spec.SpecFactory;
 
 @SuppressWarnings("all")
 public class Specs {
-  private final static SpecFactory factory = SpecFactory.eINSTANCE;
+  private static final SpecFactory factory = SpecFactory.eINSTANCE;
   
   public static Example pendingExample() {
     Example _xblockexpression = null;

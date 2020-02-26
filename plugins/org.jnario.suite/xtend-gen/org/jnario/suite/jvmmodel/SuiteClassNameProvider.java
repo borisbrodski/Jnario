@@ -34,7 +34,7 @@ public class SuiteClassNameProvider extends JnarioNameProvider {
     this.featureNameProvider = featureNameProvider;
   }
   
-  private final static String POSTFIX = "Suite";
+  private static final String POSTFIX = "Suite";
   
   protected String removePrefix(final Suite suite) {
     String _xblockexpression = null;

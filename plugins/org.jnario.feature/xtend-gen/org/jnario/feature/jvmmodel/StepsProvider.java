@@ -34,7 +34,7 @@ public class StepsProvider {
           return it.getXtendTypes();
         }
       };
-      final Iterable<Feature> features = Iterables.<Feature>filter(Iterables.<JnarioTypeDeclaration>concat(IterableExtensions.<FeatureFile, EList<JnarioTypeDeclaration>>map(featureFiles, _function)), Feature.class);
+      final Iterable<Feature> features = Iterables.<Feature>filter((Iterables.<JnarioTypeDeclaration>concat(IterableExtensions.<FeatureFile, EList<JnarioTypeDeclaration>>map(featureFiles, _function))), Feature.class);
       final Function1<Feature, Iterable<Scenario>> _function_1 = new Function1<Feature, Iterable<Scenario>>() {
         @Override
         public Iterable<Scenario> apply(final Feature it) {
@@ -59,7 +59,7 @@ public class StepsProvider {
           return it.getSteps();
         }
       };
-      _xblockexpression = Iterables.<StepImplementation>filter(Iterables.<Step>concat(IterableExtensions.<Scenario, EList<Step>>map(scenarios, _function_2)), StepImplementation.class);
+      _xblockexpression = Iterables.<StepImplementation>filter((Iterables.<Step>concat(IterableExtensions.<Scenario, EList<Step>>map(scenarios, _function_2))), StepImplementation.class);
     }
     return _xblockexpression;
   }

@@ -52,9 +52,9 @@ import org.jnario.suite.suite.SuitePackage;
 
 @SuppressWarnings("all")
 public class SuiteResourceDescriptionManager extends DerivedStateAwareResourceDescriptionManager {
-  private final static Logger logger = Logger.getLogger(SuiteResourceDescriptionManager.class);
+  private static final Logger logger = Logger.getLogger(SuiteResourceDescriptionManager.class);
   
-  private final static HashSet<String> FILE_EXTENSIONS = CollectionLiterals.<String>newHashSet("suite", "spec", "feature");
+  private static final HashSet<String> FILE_EXTENSIONS = CollectionLiterals.<String>newHashSet("suite", "spec", "feature");
   
   @Inject
   @Extension

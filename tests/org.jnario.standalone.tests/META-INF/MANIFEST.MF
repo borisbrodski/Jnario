@@ -3,14 +3,14 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Jnario Standalone Tests
 Bundle-SymbolicName: org.jnario.standalone.tests
-Bundle-Version: 1.1.1.qualifier
+Bundle-Version: 1.2.0.qualifier
 Bundle-Vendor: BMW Car IT
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.jnario.standalone,
  org.jnario.spec,
  org.hamcrest;bundle-version="1.1.0",
  org.junit,
- org.eclipse.xtext.junit4;bundle-version="[2.11.0,2.15.0)",
+ org.eclipse.xtext.junit4;bundle-version="[2.11.0,2.21.0)",
  com.google.inject,
  com.google.guava,
  org.eclipse.xtext.xbase.lib,

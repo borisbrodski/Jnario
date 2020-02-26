@@ -24,7 +24,7 @@ import org.jnario.runner.FeatureRunner;
 
 @SuppressWarnings("all")
 public class JUnit4RuntimeSupport implements TestRuntimeSupport {
-  private final static String RUN_WITH = "org.junit.runner.RunWith";
+  private static final String RUN_WITH = "org.junit.runner.RunWith";
   
   @Inject
   @Extension

@@ -80,7 +80,7 @@ import org.jnario.util.SourceAdapter;
  */
 @SuppressWarnings("all")
 public class FeatureJvmModelInferrer extends JnarioJvmModelInferrer {
-  public final static String STEP_VALUES = "args";
+  public static final String STEP_VALUES = "args";
   
   @Inject
   @Extension

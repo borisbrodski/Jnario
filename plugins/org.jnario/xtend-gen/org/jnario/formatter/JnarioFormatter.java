@@ -227,6 +227,7 @@ public class JnarioFormatter extends XbaseWithAnnotationsFormatter {
     }
   }
   
+  @Override
   public void format(final Object type, final IFormattableDocument format) {
     if (type instanceof JvmTypeParameter) {
       _format((JvmTypeParameter)type, format);

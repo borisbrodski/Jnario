@@ -25,15 +25,15 @@ import org.jnario.util.Nodes;
 
 @SuppressWarnings("all")
 public class SpecResourceDescriptionStrategy extends JnarioResourceDescriptionStrategy {
-  public final static String ROOT_SPEC = "root";
+  public static final String ROOT_SPEC = "root";
   
-  public final static String TRUE = "1";
+  public static final String TRUE = "1";
   
-  public final static String FALSE = "0";
+  public static final String FALSE = "0";
   
-  public final static String EXAMPLE_TYPE = "type";
+  public static final String EXAMPLE_TYPE = "type";
   
-  public final static String EXAMPLE_OPERATION = "operation";
+  public static final String EXAMPLE_OPERATION = "operation";
   
   @Inject
   private OperationNameProvider operationNameProvider;

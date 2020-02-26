@@ -22,7 +22,7 @@ import org.jnario.feature.feature.Step;
 
 @SuppressWarnings("all")
 public class Features {
-  private final static FeatureFactory factory = FeatureFactory.eINSTANCE;
+  private static final FeatureFactory factory = FeatureFactory.eINSTANCE;
   
   public static Given step(final String name) {
     Given _xblockexpression = null;

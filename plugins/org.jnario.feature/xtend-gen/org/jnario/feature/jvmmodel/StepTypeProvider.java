@@ -18,13 +18,13 @@ import org.jnario.feature.feature.WhenReference;
 
 @SuppressWarnings("all")
 public class StepTypeProvider {
-  public final static Set<EClass> ANDS = Collections.<EClass>unmodifiableSet(CollectionLiterals.<EClass>newHashSet(FeaturePackage.eINSTANCE.getBut(), FeaturePackage.eINSTANCE.getButReference(), FeaturePackage.eINSTANCE.getAnd(), FeaturePackage.eINSTANCE.getAndReference()));
+  public static final Set<EClass> ANDS = Collections.<EClass>unmodifiableSet(CollectionLiterals.<EClass>newHashSet(FeaturePackage.eINSTANCE.getBut(), FeaturePackage.eINSTANCE.getButReference(), FeaturePackage.eINSTANCE.getAnd(), FeaturePackage.eINSTANCE.getAndReference()));
   
-  public final static Set<EClass> GIVEN = Collections.<EClass>unmodifiableSet(CollectionLiterals.<EClass>newHashSet(FeaturePackage.eINSTANCE.getGiven(), FeaturePackage.eINSTANCE.getGivenReference()));
+  public static final Set<EClass> GIVEN = Collections.<EClass>unmodifiableSet(CollectionLiterals.<EClass>newHashSet(FeaturePackage.eINSTANCE.getGiven(), FeaturePackage.eINSTANCE.getGivenReference()));
   
-  public final static Set<EClass> WHEN = Collections.<EClass>unmodifiableSet(CollectionLiterals.<EClass>newHashSet(FeaturePackage.eINSTANCE.getWhen(), FeaturePackage.eINSTANCE.getWhenReference()));
+  public static final Set<EClass> WHEN = Collections.<EClass>unmodifiableSet(CollectionLiterals.<EClass>newHashSet(FeaturePackage.eINSTANCE.getWhen(), FeaturePackage.eINSTANCE.getWhenReference()));
   
-  public final static Set<EClass> THEN = Collections.<EClass>unmodifiableSet(CollectionLiterals.<EClass>newHashSet(FeaturePackage.eINSTANCE.getThen(), FeaturePackage.eINSTANCE.getThenReference()));
+  public static final Set<EClass> THEN = Collections.<EClass>unmodifiableSet(CollectionLiterals.<EClass>newHashSet(FeaturePackage.eINSTANCE.getThen(), FeaturePackage.eINSTANCE.getThenReference()));
   
   protected Set<EClass> _getExpectedTypes(final Given step) {
     return StepTypeProvider.GIVEN;

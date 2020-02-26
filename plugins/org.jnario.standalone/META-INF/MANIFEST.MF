@@ -3,11 +3,11 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.jnario.standalone
-Bundle-Version: 1.1.1.qualifier
+Bundle-Version: 1.2.0.qualifier
 Bundle-Localization: plugin
 Bundle-Vendor: %providerName
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.eclipse.xtext;bundle-version="[2.11.0,2.15.0)",
+Require-Bundle: org.eclipse.xtext;bundle-version="[2.11.0,2.21.0)",
  org.eclipse.jdt.core,
  org.jnario.feature;bundle-version="1.0.0",
  org.jnario;bundle-version="1.0.0",

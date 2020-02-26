@@ -192,6 +192,7 @@ public class SpecFormatter extends JnarioFormatter {
     this.format(jnarioparameter.getParameterType(), document);
   }
   
+  @Override
   public void format(final Object examplegroup, final IFormattableDocument document) {
     if (examplegroup instanceof ExampleGroup) {
       _format((ExampleGroup)examplegroup, document);

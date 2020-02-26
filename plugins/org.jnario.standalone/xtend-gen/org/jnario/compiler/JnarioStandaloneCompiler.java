@@ -63,7 +63,7 @@ import org.jnario.suite.SuiteStandaloneSetup;
 
 @SuppressWarnings("all")
 public class JnarioStandaloneCompiler extends AbstractBatchCompiler {
-  private final static Logger log = Logger.getLogger(JnarioStandaloneCompiler.class.getName());
+  private static final Logger log = Logger.getLogger(JnarioStandaloneCompiler.class.getName());
   
   @Inject
   private IStubGenerator stubGenerator;

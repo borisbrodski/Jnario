@@ -12,7 +12,7 @@ import org.eclipse.xtext.xbase.lib.util.ToStringBuilder;
 @Data
 @SuppressWarnings("all")
 public class CellLocation {
-  private final static HashSet<CellLocation> NEIGHBOUR_OFFSETS = CollectionLiterals.<CellLocation>newHashSet(
+  private static final HashSet<CellLocation> NEIGHBOUR_OFFSETS = CollectionLiterals.<CellLocation>newHashSet(
     CellLocation.cell(1, 0), CellLocation.cell(1, 1), CellLocation.cell(0, 1), CellLocation.cell((-1), (-1)), CellLocation.cell((-1), 0), CellLocation.cell((-1), 1), CellLocation.cell(0, (-1)), CellLocation.cell(1, (-1)));
   
   public static CellLocation cell(final int x, final int y) {

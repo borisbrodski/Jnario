@@ -106,8 +106,8 @@ public class XtendReferenceFinder extends DefaultReferenceFinder implements IRef
             }
           };
           XtendReferenceFinder.this.findLocalReferencesInResource(new Predicate<URI>() {
-              public boolean apply(URI arg0) {
-                return isInTargetURIs.apply(arg0);
+              public boolean apply(URI input) {
+                return isInTargetURIs.apply(input);
               }
           }, it.getResource(resourceDescription.getURI(), true), _function_1);
           return null;

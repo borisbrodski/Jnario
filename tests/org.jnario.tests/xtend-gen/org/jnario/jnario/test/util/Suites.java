@@ -18,7 +18,7 @@ import org.jnario.suite.suite.SuiteFile;
 
 @SuppressWarnings("all")
 public class Suites {
-  private final static SuiteFactory factory = SuiteFactory.eINSTANCE;
+  private static final SuiteFactory factory = SuiteFactory.eINSTANCE;
   
   public static SuiteFile suiteFile(final Suite... suites) {
     final SuiteFile file = Suites.factory.createSuiteFile();

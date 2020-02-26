@@ -58,9 +58,9 @@ import org.jnario.report.SpecExecution;
 
 @SuppressWarnings("all")
 public abstract class AbstractDocGenerator implements IGenerator {
-  private final static Logger LOG = Logger.getLogger(AbstractDocGenerator.class);
+  private static final Logger LOG = Logger.getLogger(AbstractDocGenerator.class);
   
-  private final static String SEP = "_";
+  private static final String SEP = "_";
   
   @Inject
   @Extension

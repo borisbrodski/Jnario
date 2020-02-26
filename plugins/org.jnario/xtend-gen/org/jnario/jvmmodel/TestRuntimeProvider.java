@@ -18,9 +18,9 @@ public class TestRuntimeProvider {
   
   private Provider<JUnit3RuntimeSupport> junit3Support;
   
-  private final static String JUNIT3_CLASS = "junit.framework.TestCase";
+  private static final String JUNIT3_CLASS = "junit.framework.TestCase";
   
-  private final static String JUNIT4_CLASS = "org.junit.rules.TestRule";
+  private static final String JUNIT4_CLASS = "org.junit.rules.TestRule";
   
   @Extension
   private TypeReferences typeReferences;

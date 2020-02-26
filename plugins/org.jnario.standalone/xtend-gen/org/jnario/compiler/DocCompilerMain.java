@@ -192,7 +192,7 @@ public class DocCompilerMain {
     }
   }
   
-  public final static List<ISetup> SETUPS = CollectionLiterals.<ISetup>newArrayList(new SpecStandaloneSetup(), new FeatureStandaloneSetup(), new SuiteStandaloneSetup());
+  public static final List<ISetup> SETUPS = CollectionLiterals.<ISetup>newArrayList(new SpecStandaloneSetup(), new FeatureStandaloneSetup(), new SuiteStandaloneSetup());
   
   @Pure
   public String getOutputPath() {

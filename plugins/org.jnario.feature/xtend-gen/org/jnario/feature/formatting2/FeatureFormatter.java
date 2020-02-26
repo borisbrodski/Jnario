@@ -197,6 +197,7 @@ public class FeatureFormatter extends XbaseWithAnnotationsFormatter {
     this.format(jnarioparameter.getParameterType(), document);
   }
   
+  @Override
   public void format(final Object and, final IFormattableDocument document) {
     if (and instanceof And) {
       _format((And)and, document);

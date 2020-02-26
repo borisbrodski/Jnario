@@ -499,6 +499,7 @@ public class SpecJvmModelInferrer extends JnarioJvmModelInferrer {
     return ListExtensions.<ExampleColumn, String>map(exampleTable.getColumns(), _function);
   }
   
+  @Override
   protected void transform(final JnarioMember element, final JvmGenericType container) {
     if (element instanceof After) {
       _transform((After)element, container);
