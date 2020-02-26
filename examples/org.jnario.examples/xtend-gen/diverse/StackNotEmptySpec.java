@@ -33,7 +33,7 @@ public class StackNotEmptySpec extends StackSpec {
     int _size = this.subject.size();
     Assert.assertTrue("\nExpected subject.size => 1 but"
      + "\n     subject.size is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_size)).toString()
-     + "\n     subject is " + new org.hamcrest.StringDescription().appendValue(this.subject).toString() + "\n", Should.<Integer>operator_doubleArrow(Integer.valueOf(_size), Integer.valueOf(1)));
+     + "\n     subject is " + new org.hamcrest.StringDescription().appendValue(this.subject).toString() + "\n", Should.operator_doubleArrow(Integer.valueOf(_size), Integer.valueOf(1)));
     
   }
   
@@ -46,7 +46,7 @@ public class StackNotEmptySpec extends StackSpec {
     int _size = this.subject.size();
     Assert.assertTrue("\nExpected subject.size => 0 but"
      + "\n     subject.size is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_size)).toString()
-     + "\n     subject is " + new org.hamcrest.StringDescription().appendValue(this.subject).toString() + "\n", Should.<Integer>operator_doubleArrow(Integer.valueOf(_size), Integer.valueOf(0)));
+     + "\n     subject is " + new org.hamcrest.StringDescription().appendValue(this.subject).toString() + "\n", Should.operator_doubleArrow(Integer.valueOf(_size), Integer.valueOf(0)));
     
   }
 }

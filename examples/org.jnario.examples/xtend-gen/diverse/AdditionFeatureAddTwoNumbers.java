@@ -53,7 +53,7 @@ public class AdditionFeatureAddTwoNumbers extends AdditionFeature {
      + "\n     calculator.result is " + new org.hamcrest.StringDescription().appendValue(_result).toString()
      + "\n     calculator is " + new org.hamcrest.StringDescription().appendValue(this.calculator).toString()
      + "\n     args.first is " + new org.hamcrest.StringDescription().appendValue(_first).toString()
-     + "\n     args is " + new org.hamcrest.StringDescription().appendValue(args).toString() + "\n", Should.<String>operator_doubleArrow(_result, _first));
+     + "\n     args is " + new org.hamcrest.StringDescription().appendValue(args).toString() + "\n", Should.operator_doubleArrow(_result, _first));
     
   }
 }

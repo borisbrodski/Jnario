@@ -33,6 +33,6 @@ public class PlayingGameOfLifeFeatureBlinker1 extends PlayingGameOfLifeFeature {
     final StepArguments args = new StepArguments("-----\n-----\n-XXX-\n-----\n-----\n");
     this.world = Evolution.gameOfLife().evolve(this.world);
     World _parseWorld = World.parseWorld(JnarioIterableExtensions.<String>first(args));
-    Should.<World>operator_doubleArrow(this.world, _parseWorld);
+    Should.operator_doubleArrow(this.world, _parseWorld);
   }
 }

@@ -41,5 +41,4 @@ Export-Package: org.jnario.xbase.richstring,
  org.jnario.xbase.richstring.validation,
  org.jnario.xbase.richstring.xbasewithrichstring,
  org.jnario.xbase.richstring.xbasewithrichstring.impl,
- org.jnario.xbase.richstring.xbasewithrichstring.util,
- org.jnario.xbase.richstring.jvmmodel
+ org.jnario.xbase.richstring.xbasewithrichstring.util

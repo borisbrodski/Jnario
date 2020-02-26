@@ -28,6 +28,7 @@ public class HashBasedSpec2ResultMappingStepSpec extends HashBasedSpec2ResultMap
   final Passed pendingResult = Passed.passingSpec("example.SomethingFeatureMyScenario", "Given a pending step [PENDING]", HashBasedSpec2ResultMappingSpec.anyExecutionTime);
   
   final Passed resultWithUnicodeChars = new Function0<Passed>() {
+    @Override
     public Passed apply() {
       StringConcatenation _builder = new StringConcatenation();
       _builder.append("Given step with umläuts");
@@ -37,6 +38,7 @@ public class HashBasedSpec2ResultMappingStepSpec extends HashBasedSpec2ResultMap
   }.apply();
   
   final Passed resultWithArgs = new Function0<Passed>() {
+    @Override
     public Passed apply() {
       StringConcatenation _builder = new StringConcatenation();
       _builder.append("Given step with \"args\"");

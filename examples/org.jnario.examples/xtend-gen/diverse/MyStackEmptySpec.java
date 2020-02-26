@@ -22,7 +22,7 @@ public class MyStackEmptySpec extends MyStackSpec {
   @Order(1)
   public void _emptyStackSizeShouldBe0() throws Exception {
     int _size = this.emptyStack.size();
-    boolean _should_be = Should.<Integer>should_be(Integer.valueOf(_size), Integer.valueOf(0));
+    boolean _should_be = Should.should_be(Integer.valueOf(_size), Integer.valueOf(0));
     Assert.assertTrue("\nExpected emptyStack.size should be 0 but"
      + "\n     emptyStack.size is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_size)).toString()
      + "\n     emptyStack is " + new org.hamcrest.StringDescription().appendValue(this.emptyStack).toString() + "\n", _should_be);

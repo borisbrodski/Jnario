@@ -38,7 +38,7 @@ public class PlayingGameOfLifeFeatureBox extends PlayingGameOfLifeFeature {
      + "\n     world is " + new org.hamcrest.StringDescription().appendValue(this.world).toString()
      + "\n     parseWorld(args.first) is " + new org.hamcrest.StringDescription().appendValue(_parseWorld).toString()
      + "\n     args.first is " + new org.hamcrest.StringDescription().appendValue(JnarioIterableExtensions.<String>first(args)).toString()
-     + "\n     args is " + new org.hamcrest.StringDescription().appendValue(args).toString() + "\n", Should.<World>operator_doubleArrow(
+     + "\n     args is " + new org.hamcrest.StringDescription().appendValue(args).toString() + "\n", Should.operator_doubleArrow(
       this.world, _parseWorld));
     
   }

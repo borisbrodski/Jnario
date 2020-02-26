@@ -59,13 +59,13 @@ public class JnarioSpecsFactsForJavaSpec {
   @Named("Should-style Assertions")
   @Order(1)
   public void _shouldStyleAssertions() throws Exception {
-    boolean _should_be = Should.<String>should_be(
+    boolean _should_be = Should.should_be(
       "hello", "hello");
     Assert.assertTrue("\nExpected \"hello\" should be \"hello\" but"
      + "\n     \"hello\" should be \"hello\" is " + new org.hamcrest.StringDescription().appendValue(true).toString() + "\n", _should_be);
     
-    boolean _should_be_1 = Should.<Boolean>should_be(
-      Boolean.valueOf(true), false);
+    boolean _should_be_1 = Should.should_be(
+      Boolean.valueOf(true), Boolean.valueOf(false));
     Assert.assertFalse("\nExpected true should not be false but"
      + "\n     true should not be false is " + new org.hamcrest.StringDescription().appendValue(true).toString() + "\n", _should_be_1);
     

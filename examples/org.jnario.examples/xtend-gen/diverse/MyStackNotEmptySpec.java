@@ -23,7 +23,7 @@ public class MyStackNotEmptySpec extends MyStackSpec {
     String _pop = stack.pop();
     Assert.assertTrue("\nExpected stack.pop => \"something\" but"
      + "\n     stack.pop is " + new org.hamcrest.StringDescription().appendValue(_pop).toString()
-     + "\n     stack is " + new org.hamcrest.StringDescription().appendValue(stack).toString() + "\n", Should.<String>operator_doubleArrow(_pop, "something"));
+     + "\n     stack is " + new org.hamcrest.StringDescription().appendValue(stack).toString() + "\n", Should.operator_doubleArrow(_pop, "something"));
     
   }
 }

@@ -14,13 +14,13 @@ import org.junit.Before;
 @SuppressWarnings("all")
 public class ExampleExtension {
   @Before
-  public String before() {
-    return InputOutput.<String>println("before");
+  public void before() {
+    InputOutput.<String>println("before");
   }
   
   @After
-  public String after() {
-    return InputOutput.<String>println("after");
+  public void after() {
+    InputOutput.<String>println("after");
   }
   
   public String greet(final String s) {

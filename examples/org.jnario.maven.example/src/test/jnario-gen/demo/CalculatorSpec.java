@@ -75,19 +75,17 @@ public class CalculatorSpec {
   @Named("should handle tables")
   @Order(2)
   public void _shouldHandleTables() throws Exception {
-    final Procedure1<CalculatorSpecExamples> _function = new Procedure1<CalculatorSpecExamples>() {
-      public void apply(final CalculatorSpecExamples it) {
-        int _a = it.getA();
-        int _b = it.getB();
-        int _plus = (_a + _b);
-        int _sum = it.getSum();
-        Assert.assertTrue("\nExpected a + b => sum but"
-         + "\n     a + b is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_plus)).toString()
-         + "\n     a is " + new org.hamcrest.StringDescription().appendValue(_a).toString()
-         + "\n     b is " + new org.hamcrest.StringDescription().appendValue(_b).toString()
-         + "\n     sum is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_sum)).toString() + "\n", Should.operator_doubleArrow(Integer.valueOf(_plus), Integer.valueOf(_sum)));
-        
-      }
+    final Procedure1<CalculatorSpecExamples> _function = (CalculatorSpecExamples it) -> {
+      int _a = it.getA();
+      int _b = it.getB();
+      int _plus = (_a + _b);
+      int _sum = it.getSum();
+      Assert.assertTrue("\nExpected a + b => sum but"
+       + "\n     a + b is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_plus)).toString()
+       + "\n     a is " + new org.hamcrest.StringDescription().appendValue(_a).toString()
+       + "\n     b is " + new org.hamcrest.StringDescription().appendValue(_b).toString()
+       + "\n     sum is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_sum)).toString() + "\n", Should.operator_doubleArrow(Integer.valueOf(_plus), Integer.valueOf(_sum)));
+      
     };
     Each.<CalculatorSpecExamples>forEach(this.examples, _function);
   }
@@ -96,24 +94,22 @@ public class CalculatorSpec {
   @Named("load a richstring")
   @Order(3)
   public void _loadARichstring() throws Exception {
-    final Procedure1<CalculatorSpecExamples> _function = new Procedure1<CalculatorSpecExamples>() {
-      public void apply(final CalculatorSpecExamples it) {
-        StringConcatenation _builder = new StringConcatenation();
-        _builder.append("pre ");
-        int _b = it.getB();
-        _builder.append(_b, "");
-        _builder.append(" post");
-        final String x = _builder.toString();
-        int _b_1 = it.getB();
-        String _plus = ("pre " + Integer.valueOf(_b_1));
-        String _plus_1 = (_plus + " post");
-        Assert.assertTrue("\nExpected x => \"pre \" + b + \" post\" but"
-         + "\n     x is " + new org.hamcrest.StringDescription().appendValue(x).toString()
-         + "\n     \"pre \" + b + \" post\" is " + new org.hamcrest.StringDescription().appendValue(_plus_1).toString()
-         + "\n     \"pre \" + b is " + new org.hamcrest.StringDescription().appendValue(_plus).toString()
-         + "\n     b is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_b_1)).toString() + "\n", Should.operator_doubleArrow(x, _plus_1));
-        
-      }
+    final Procedure1<CalculatorSpecExamples> _function = (CalculatorSpecExamples it) -> {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("pre ");
+      int _b = it.getB();
+      _builder.append(_b, "");
+      _builder.append(" post");
+      final String x = _builder.toString();
+      int _b_1 = it.getB();
+      String _plus = ("pre " + Integer.valueOf(_b_1));
+      String _plus_1 = (_plus + " post");
+      Assert.assertTrue("\nExpected x => \"pre \" + b + \" post\" but"
+       + "\n     x is " + new org.hamcrest.StringDescription().appendValue(x).toString()
+       + "\n     \"pre \" + b + \" post\" is " + new org.hamcrest.StringDescription().appendValue(_plus_1).toString()
+       + "\n     \"pre \" + b is " + new org.hamcrest.StringDescription().appendValue(_plus).toString()
+       + "\n     b is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_b_1)).toString() + "\n", Should.operator_doubleArrow(x, _plus_1));
+      
     };
     Each.<CalculatorSpecExamples>forEach(this.examples, _function);
   }

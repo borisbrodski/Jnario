@@ -35,15 +35,32 @@
 					<div class="span12">
 						  <div class="tab-content">
 							  	<div class="tab-pane active" id="spec">
-<p align="center"><img src="file://localhost/Users/sebastian/Desktop/Specs.png"/></p><p><em>Jnario</em> is a framework helping you write executable software specifications. It leverages the expressiveness of <a href="http://www.xtend-lang.org">Xtend</a> and is easy to integrate, as it compiles to plain <a href="http://www.junit.org/">JUnit</a> tests. In our other <a href="http://www.eclipsecon.org/2012/sessions/program-thou-shalt-behave">presentation</a> at this EclipseCon, we demonstrate how to use Jnario for writing executable acceptance specifications in a business readable fashion. This session introduces you to <em>Jnario Specs</em> fact another language of Jnario allowing software behavior specification on a unit level. We demonstrate how you can design and document your software at the same time. For example, this document is actually generated from a <a href="https://gist.github.com/1762405">spec</a> written with <em>Jnario Specs</em>.</p>
+<p align="center"><img src="file://localhost/Users/sebastian/Desktop/Specs.png"/></p>
+<p><em>Jnario</em> is a framework helping you write executable software specifications.
+It leverages the expressiveness of <a href="http://www.xtend-lang.org">Xtend</a> and is easy to
+integrate, as it compiles to plain <a href="http://www.junit.org/">JUnit</a> tests.
+In our other <a href="http://www.eclipsecon.org/2012/sessions/program-thou-shalt-behave">presentation</a>
+at this EclipseCon, we demonstrate how to use Jnario for writing executable acceptance
+specifications in a business readable fashion.
+This session introduces you to <em>Jnario Specs</em> fact another language of Jnario allowing
+software behavior specification on a unit level. We demonstrate how you can design and document
+your software at the same time.
+For example, this document is actually generated from a <a href="https://gist.github.com/1762405">spec</a> written
+with <em>Jnario Specs</em>.</p>
 <ul><li><p id="Should_style_Assertions" class="example notrun"><strong>Should-style Assertions</strong></p>
-<p>Jnario improves the readability of tests by providing assertion methods which can extend any object (making use of Xtend's <a href="http://www.eclipse.org/xtend/#extensionmethods">extension methods</a>). These assertions help you express how an object should behave. They can be combined with any <a href="http://code.google.com/p/hamcrest/">Hamcrest</a> matcher, giving you the freedom to choose from a wide range of existing matchers.</p>
+<p>Jnario improves the readability of tests by providing assertion methods which can extend
+any object (making use of Xtend's <a href="http://www.eclipse.org/xtend/#extensionmethods">extension methods</a>).
+These assertions help you express how an object should behave. They can be combined with any
+<a href="http://code.google.com/p/hamcrest/">Hamcrest</a> matcher, giving you the freedom to choose from
+a wide range of existing matchers.</p>
 <pre class="prettyprint lang-spec linenums">
 &quot;hello&quot; should be &quot;hello&quot; 
     true should not be false
     &quot;hello&quot; should be typeof(String)</pre>
 </li><li><p id="Self_explaining_Assertions" class="example notrun"><strong>Self-explaining Assertions</strong></p>
-<p>With Jnario, debugging a failing test to discover the reason for its failure becomes a thing of the past. Jnario provides a special assert statement that reports, when the assertion fails, the value of all involved expressions.</p>
+<p>With Jnario, debugging a failing test to discover the reason for its failure becomes
+a thing of the past. Jnario provides a special assert statement that reports, when the assertion fails,
+the value of all involved expressions.</p>
 <pre class="prettyprint lang-spec linenums">
 val x = 0  
 val y = 1
@@ -55,7 +72,12 @@ errorMessage[assert x == 1 &amp;&amp; y == 0].is('''
        y is &lt;1&gt;'''
   )</pre>
 </li><li><p id="Implicit_subject_creation" class="example notrun"><strong>Implicit subject creation</strong></p>
-<p><em>Jnario Specs</em> helps you write less boilerplate code in your specifications. In the following example, <code>describe Calculator</code> references the existing Java type <code>Calculator</code>. Using this information Jnario will automatically create and instantiate a field <code>subject</code>, which you can use in your specification. It is even possible to use <a href="http://code.google.com/p/google-guice/">Google Guice</a> to instantiate your subjects.</p>
+<p><em>Jnario Specs</em> helps you write less boilerplate code in your
+specifications. In the following example, <code>describe Calculator</code>
+references the existing Java type <code>Calculator</code>.
+Using this information Jnario will automatically create and instantiate a field <code>subject</code>,
+which you can use in your specification. It is even possible to use
+<a href="http://code.google.com/p/google-guice/">Google Guice</a> to instantiate your subjects.</p>
 <pre class="prettyprint lang-spec linenums">
 package bootstrap
 

@@ -29,7 +29,7 @@ public class CellLocationCellNeighboursSpec extends CellLocationSpec {
     Assert.assertTrue("\nExpected cell.neighbours => expectedNeighbours but"
      + "\n     cell.neighbours is " + new org.hamcrest.StringDescription().appendValue(_neighbours).toString()
      + "\n     cell is " + new org.hamcrest.StringDescription().appendValue(cell).toString()
-     + "\n     expectedNeighbours is " + new org.hamcrest.StringDescription().appendValue(expectedNeighbours).toString() + "\n", Should.<Set<CellLocation>>operator_doubleArrow(_neighbours, expectedNeighbours));
+     + "\n     expectedNeighbours is " + new org.hamcrest.StringDescription().appendValue(expectedNeighbours).toString() + "\n", Should.operator_doubleArrow(_neighbours, expectedNeighbours));
     
   }
 }

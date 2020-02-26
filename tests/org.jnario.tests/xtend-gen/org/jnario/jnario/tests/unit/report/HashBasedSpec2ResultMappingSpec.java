@@ -45,16 +45,16 @@ public class HashBasedSpec2ResultMappingSpec {
   @Subject
   public HashBasedSpec2ResultMapping subject;
   
-  final static String SCENARIO_CLASSNAME = "test.MyFeatureFeatureMyScenario";
+  static final String SCENARIO_CLASSNAME = "test.MyFeatureFeatureMyScenario";
   
-  final static String OTHER_SCENARIO_CLASSNAME = "test.MyFeatureFeatureMyOtherScenario";
+  static final String OTHER_SCENARIO_CLASSNAME = "test.MyFeatureFeatureMyOtherScenario";
   
   @Extension
   @org.jnario.runner.Extension
   @Inject
   public ModelStore m;
   
-  final static double anyExecutionTime = 0.0;
+  static final double anyExecutionTime = 0.0;
   
   final Example anyExecutable = Specs.example("");
   

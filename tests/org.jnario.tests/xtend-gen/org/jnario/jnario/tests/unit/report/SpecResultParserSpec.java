@@ -33,13 +33,14 @@ public class SpecResultParserSpec {
   @Subject
   public SpecResultParser subject;
   
-  final static String CLASSNAME = "demo.CalculatorSpec";
+  static final String CLASSNAME = "demo.CalculatorSpec";
   
-  final static String NAME = "adding values";
+  static final String NAME = "adding values";
   
-  final static double EXECUTION_TIME = 0.01;
+  static final double EXECUTION_TIME = 0.01;
   
-  final static String FAILURE_MESSAGE = new Function0<String>() {
+  static final String FAILURE_MESSAGE = new Function0<String>() {
+    @Override
     public String apply() {
       StringConcatenation _builder = new StringConcatenation();
       _builder.append("a message");
@@ -50,9 +51,10 @@ public class SpecResultParserSpec {
     }
   }.apply();
   
-  final static String FAILURE_TYPE = "java.lang.AssertionError";
+  static final String FAILURE_TYPE = "java.lang.AssertionError";
   
-  final static String STACKTRACE = new Function0<String>() {
+  static final String STACKTRACE = new Function0<String>() {
+    @Override
     public String apply() {
       StringConcatenation _builder = new StringConcatenation();
       _builder.append("\t");
@@ -72,7 +74,7 @@ public class SpecResultParserSpec {
     }
   }.apply();
   
-  final static String XML_STACKTRACE = ((SpecResultParserSpec.FAILURE_MESSAGE + "\n") + SpecResultParserSpec.STACKTRACE);
+  static final String XML_STACKTRACE = ((SpecResultParserSpec.FAILURE_MESSAGE + "\n") + SpecResultParserSpec.STACKTRACE);
   
   @Test
   @Named("parses successfull specs from xml")

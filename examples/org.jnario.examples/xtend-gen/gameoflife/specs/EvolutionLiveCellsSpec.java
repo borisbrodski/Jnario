@@ -38,7 +38,7 @@ public class EvolutionLiveCellsSpec extends EvolutionSpec {
      + "\n     evolution is " + new org.hamcrest.StringDescription().appendValue(evolution).toString()
      + "\n     worldWithLiveCell is " + new org.hamcrest.StringDescription().appendValue(this.worldWithLiveCell).toString()
      + "\n     set(livingCell) is " + new org.hamcrest.StringDescription().appendValue(_set).toString()
-     + "\n     livingCell is " + new org.hamcrest.StringDescription().appendValue(this.livingCell).toString() + "\n", Should.<Set<CellLocation>>operator_doubleArrow(_livingCells, _set));
+     + "\n     livingCell is " + new org.hamcrest.StringDescription().appendValue(this.livingCell).toString() + "\n", Should.operator_doubleArrow(_livingCells, _set));
     
   }
 }

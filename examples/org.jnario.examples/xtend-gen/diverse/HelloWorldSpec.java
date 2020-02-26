@@ -17,7 +17,7 @@ public class HelloWorldSpec {
   @Order(1)
   public void _helloWorldLengthShouldBe11() throws Exception {
     int _length = "Hello World".length();
-    boolean _should_be = Should.<Integer>should_be(Integer.valueOf(_length), Integer.valueOf(11));
+    boolean _should_be = Should.should_be(Integer.valueOf(_length), Integer.valueOf(11));
     Assert.assertTrue("\nExpected \"Hello World\".length should be 11 but"
      + "\n     \"Hello World\".length is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_length)).toString() + "\n", _should_be);
     

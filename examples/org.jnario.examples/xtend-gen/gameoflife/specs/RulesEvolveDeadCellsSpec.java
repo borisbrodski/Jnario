@@ -71,7 +71,7 @@ public class RulesEvolveDeadCellsSpec extends RulesSpec {
          + "\n     subject.becomesAlive(liveNeighbourCount) is " + new org.hamcrest.StringDescription().appendValue(Boolean.valueOf(_becomesAlive)).toString()
          + "\n     subject is " + new org.hamcrest.StringDescription().appendValue(RulesEvolveDeadCellsSpec.this.subject).toString()
          + "\n     liveNeighbourCount is " + new org.hamcrest.StringDescription().appendValue(it.getLiveNeighbourCount()).toString()
-         + "\n     result is " + new org.hamcrest.StringDescription().appendValue(_result).toString() + "\n", Should.<Boolean>operator_doubleArrow(Boolean.valueOf(_becomesAlive), _result));
+         + "\n     result is " + new org.hamcrest.StringDescription().appendValue(Boolean.valueOf(_result)).toString() + "\n", Should.operator_doubleArrow(Boolean.valueOf(_becomesAlive), Boolean.valueOf(_result)));
         
       }
     };

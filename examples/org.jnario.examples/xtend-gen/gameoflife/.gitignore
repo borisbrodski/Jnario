@@ -3,3 +3,6 @@
 /EvolveDeadCells.java
 /EvolveLiveCells.java
 /World.java
+/FeaturesSuite.java
+/GameOfLifeWithJnarioXtendSuite.java
+/UnitSpecificationsSuite.java

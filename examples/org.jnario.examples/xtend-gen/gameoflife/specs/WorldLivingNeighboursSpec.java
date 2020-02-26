@@ -21,7 +21,7 @@ public class WorldLivingNeighboursSpec extends WorldSpec {
     Assert.assertTrue("\nExpected worldWithTwoLiveNeighbours.livingNeighbours(liveCell) => 1 but"
      + "\n     worldWithTwoLiveNeighbours.livingNeighbours(liveCell) is " + new org.hamcrest.StringDescription().appendValue(Integer.valueOf(_livingNeighbours)).toString()
      + "\n     worldWithTwoLiveNeighbours is " + new org.hamcrest.StringDescription().appendValue(this.worldWithTwoLiveNeighbours).toString()
-     + "\n     liveCell is " + new org.hamcrest.StringDescription().appendValue(this.liveCell).toString() + "\n", Should.<Integer>operator_doubleArrow(Integer.valueOf(_livingNeighbours), Integer.valueOf(1)));
+     + "\n     liveCell is " + new org.hamcrest.StringDescription().appendValue(this.liveCell).toString() + "\n", Should.operator_doubleArrow(Integer.valueOf(_livingNeighbours), Integer.valueOf(1)));
     
   }
 }

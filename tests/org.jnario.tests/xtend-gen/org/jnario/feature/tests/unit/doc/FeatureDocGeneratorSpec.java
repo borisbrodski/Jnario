@@ -163,6 +163,7 @@ public class FeatureDocGeneratorSpec {
   }
   
   final String message = new Function0<String>() {
+    @Override
     public String apply() {
       StringConcatenation _builder = new StringConcatenation();
       _builder.append("Expected result => args.first.toInt but      ");

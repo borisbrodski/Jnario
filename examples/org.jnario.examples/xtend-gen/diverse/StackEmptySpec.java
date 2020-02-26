@@ -31,7 +31,7 @@ public class StackEmptySpec extends StackSpec {
   @Order(1)
   public void _subjectEmptyShouldBeTrue() throws Exception {
     boolean _empty = this.subject.empty();
-    boolean _should_be = Should.<Boolean>should_be(Boolean.valueOf(_empty), true);
+    boolean _should_be = Should.should_be(Boolean.valueOf(_empty), Boolean.valueOf(true));
     Assert.assertTrue("\nExpected subject.empty() should be true but"
      + "\n     subject.empty() is " + new org.hamcrest.StringDescription().appendValue(Boolean.valueOf(_empty)).toString()
      + "\n     subject is " + new org.hamcrest.StringDescription().appendValue(this.subject).toString() + "\n", _should_be);

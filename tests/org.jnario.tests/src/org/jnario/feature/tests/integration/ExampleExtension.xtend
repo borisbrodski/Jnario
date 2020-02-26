@@ -12,11 +12,11 @@ import org.junit.Before
 
 class ExampleExtension {
 	
-	@Before def before(){
+	@Before def void before(){
 		println("before")
 	}
 	
-	@After def after(){
+	@After def void after(){
 		println("after")
 	}
 	
